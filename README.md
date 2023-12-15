@@ -161,4 +161,8 @@
     region=us-east-1
    mfa_serial=arn:aws:iam::xxxxxxxxxxxx:mfa/terraform.test
    ```
+ ## Register a domain
+  - The domain can be registered from any domain registrar or right in the same AWS account depending on your needs. Owning a domain name will typically cost between $3 and $20 per year.
+  - You also need to create a Route53 hosted zone for the above domain in the same AWS account and get the NS record information from there.
+  - Then go to your domain settings and update its nameservers to route traffic to your AWS account’s Route53.
 
