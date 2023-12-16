@@ -202,3 +202,20 @@
     ```
     $ ssh -i private-key/terraform-key.pem ec2-user@BastionHost-Public IPv4
     ```
+    
+## Cleanup 
+  - terraform destroy
+  - Some AWS resources you have to delete manually:
+    ```
+    CloudWatch > Log groups
+    CloudWatch > Alarms
+    Lambda > Functions
+    S3 bucket, DynamoDB
+    ```
+    
+  - and also the following local files:
+    ```
+    # Delete Files
+    rm -rf .terraform*
+    rm -rf terraform.tfstate*
+    ```
