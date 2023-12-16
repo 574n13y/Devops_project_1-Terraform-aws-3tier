@@ -167,12 +167,13 @@
   - Then go to your domain settings and update its nameservers to route traffic to your AWS account’s Route53.
 
 ## Remote state storage with S3 and DynamoDB
-  -  If you choose not to use remote state for a simpler approach, you can skip this step, but be sure to comment out the contents of the “t1–02-backend.tf” file later.
-  -  Terraform state (“terraform.tfstate" file) can also be stored remotely. In this lab, you need to create an AWS S3 bucket in advance to store the state file as follows:
+  - If you choose not to use remote state for a simpler approach, you can skip this step, but be sure to comment out the contents of the “t1–02-backend.tf” file later.
+  - Terraform state (“terraform.tfstate" file) can also be stored remotely. In this lab, you need to create an AWS S3 bucket in advance to store the state file as follows:
     1. Bucket name: devops-projects-infra-test
     2. Region: US-East (N.Virginia) us-east-1
     3. Bucket Versioning: Enable
     4. Create folder: dev/devops-01
+       
  - Then, create a Dynamo DB Table that is used for state locking:
    1. Table Name: dev-devops-01
    2. Partition key (Primary Key): LockID (Type as String)
