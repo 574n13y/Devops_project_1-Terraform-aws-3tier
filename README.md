@@ -5,7 +5,8 @@
 - Note that this is a 3-Tier VPC network architecture. We rely on the Terraform module “terraform-aws-modules/vpc/aws” to create most of the network components here.
 
 ## Architecture diagram
-  ![image](https://github.com/574n13y/Devops/assets/35293085/142d04ed-e1d2-49f2-9ccb-e78e88088970)
+ ![3arch](https://github.com/user-attachments/assets/402381c9-b308-4b95-b503-5c6cbbdfb3f4)
+
 
 ## Tools 
  - [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
